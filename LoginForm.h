@@ -52,38 +52,35 @@ public
 		}
 
 	private:
-		System::Windows::Forms::TextBox ^ email;
+		System::Windows::Forms::Panel ^ panel1;
 
 	protected:
 	private:
-		System::Windows::Forms::Panel ^ panel1;
+		System::Windows::Forms::Panel ^ panel10;
 
 	private:
-		System::Windows::Forms::Panel ^ panel2;
+		System::Windows::Forms::TextBox ^ email;
 
 	private:
 		System::Windows::Forms::Panel ^ panel7;
 
 	private:
-		System::Windows::Forms::Panel ^ panel3;
+		System::Windows::Forms::Label ^ label17;
 
 	private:
-		System::Windows::Forms::Panel ^ panel6;
+		System::Windows::Forms::Label ^ label3;
 
 	private:
-		System::Windows::Forms::TextBox ^ password;
+		System::Windows::Forms::Label ^ label5;
 
 	private:
-		System::Windows::Forms::Panel ^ panel4;
+		System::Windows::Forms::Label ^ label6;
 
 	private:
-		System::Windows::Forms::Panel ^ panel5;
+		System::Windows::Forms::Panel ^ panel2;
 
 	private:
-		System::Windows::Forms::Panel ^ panel8;
-
-	private:
-		System::Windows::Forms::Panel ^ panel10;
+		System::Windows::Forms::Button ^ button1;
 
 	private:
 		System::Windows::Forms::Label ^ label4;
@@ -92,20 +89,50 @@ public
 		System::Windows::Forms::Label ^ label1;
 
 	private:
-		System::Windows::Forms::Button ^ button1;
+		System::Windows::Forms::Panel ^ panel5;
 
 	private:
-		System::Windows::Forms::Label ^ label6;
+		System::Windows::Forms::Panel ^ panel4;
 
 	private:
-		System::Windows::Forms::Label ^ label5;
+		System::Windows::Forms::Panel ^ panel3;
 
 	private:
-		System::Windows::Forms::Label ^ label3;
+		System::Windows::Forms::Panel ^ panel8;
 
 	private:
-		System::Windows::Forms::Label ^ label2;
+		System::Windows::Forms::TextBox ^ password;
 
+	private:
+		System::Windows::Forms::Panel ^ panel6;
+
+	protected:
+	protected:
+	protected:
+	private:
+	protected:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
+	private:
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -120,10 +147,14 @@ public
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager ^ resources = (gcnew System::ComponentModel::ComponentResourceManager(LoginForm::typeid));
-			this->email = (gcnew System::Windows::Forms::TextBox());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel10 = (gcnew System::Windows::Forms::Panel());
+			this->email = (gcnew System::Windows::Forms::TextBox());
 			this->panel7 = (gcnew System::Windows::Forms::Panel());
+			this->label17 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label4 = (gcnew System::Windows::Forms::Label());
@@ -132,30 +163,13 @@ public
 			this->panel8 = (gcnew System::Windows::Forms::Panel());
 			this->password = (gcnew System::Windows::Forms::TextBox());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
-			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->panel4->SuspendLayout();
 			this->SuspendLayout();
-			//
-			// email
-			//
-			this->email->BackColor = System::Drawing::Color::White;
-			this->email->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->email->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															 static_cast<System::Byte>(0)));
-			this->email->ForeColor = System::Drawing::Color::Black;
-			this->email->Location = System::Drawing::Point(70, 13);
-			this->email->Name = L"email";
-			this->email->Size = System::Drawing::Size(360, 27);
-			this->email->TabIndex = 2;
-			this->email->Text = L"Email";
 			//
 			// panel1
 			//
@@ -163,7 +177,7 @@ public
 			this->panel1->Controls->Add(this->panel10);
 			this->panel1->Controls->Add(this->email);
 			this->panel1->Controls->Add(this->panel7);
-			this->panel1->Location = System::Drawing::Point(33, 202);
+			this->panel1->Location = System::Drawing::Point(33, 209);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(433, 61);
 			this->panel1->TabIndex = 6;
@@ -176,6 +190,20 @@ public
 			this->panel10->Size = System::Drawing::Size(405, 3);
 			this->panel10->TabIndex = 9;
 			//
+			// email
+			//
+			this->email->BackColor = System::Drawing::Color::White;
+			this->email->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->email->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+															 static_cast<System::Byte>(0)));
+			this->email->ForeColor = System::Drawing::Color::Black;
+			this->email->Location = System::Drawing::Point(70, 13);
+			this->email->Name = L"email";
+			this->email->Size = System::Drawing::Size(360, 27);
+			this->email->TabIndex = 1;
+			this->email->Text = L"Email";
+			this->email->Click += gcnew System::EventHandler(this, &LoginForm::email_Click);
+			//
 			// panel7
 			//
 			this->panel7->BackColor = System::Drawing::Color::Transparent;
@@ -186,13 +214,67 @@ public
 			this->panel7->Size = System::Drawing::Size(42, 32);
 			this->panel7->TabIndex = 2;
 			//
+			// label17
+			//
+			this->label17->AutoSize = true;
+			this->label17->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+															   static_cast<System::Byte>(0)));
+			this->label17->Location = System::Drawing::Point(188, 430);
+			this->label17->Name = L"label17";
+			this->label17->Size = System::Drawing::Size(142, 19);
+			this->label17->TabIndex = 0;
+			this->label17->Text = L"Belum Memiliki Akun\?";
+			this->label17->Click += gcnew System::EventHandler(this, &LoginForm::other_Click);
+			//
+			// label3
+			//
+			this->label3->AutoSize = true;
+			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+															  static_cast<System::Byte>(0)));
+			this->label3->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label3->Location = System::Drawing::Point(416, 430);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(47, 19);
+			this->label3->TabIndex = 4;
+			this->label3->Text = L"Daftar";
+			this->label3->Click += gcnew System::EventHandler(this, &LoginForm::daftar_Click);
+			//
+			// label5
+			//
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+															  static_cast<System::Byte>(0)));
+			this->label5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+																	   static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->label5->Location = System::Drawing::Point(71, 483);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(356, 19);
+			this->label5->TabIndex = 0;
+			this->label5->Text = L"__________________________ Atau __________________________\r\n";
+			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label5->Click += gcnew System::EventHandler(this, &LoginForm::other_Click);
+			//
+			// label6
+			//
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+															  static_cast<System::Byte>(0)));
+			this->label6->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+																	   static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->label6->Location = System::Drawing::Point(188, 529);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(142, 19);
+			this->label6->TabIndex = 5;
+			this->label6->Text = L"Lanjutkan tanpa log in";
+			//
 			// panel2
 			//
 			this->panel2->Controls->Add(this->label6);
 			this->panel2->Controls->Add(this->label5);
 			this->panel2->Controls->Add(this->label3);
 			this->panel2->Controls->Add(this->button1);
-			this->panel2->Controls->Add(this->label2);
+			this->panel2->Controls->Add(this->label17);
 			this->panel2->Controls->Add(this->label4);
 			this->panel2->Controls->Add(this->label1);
 			this->panel2->Controls->Add(this->panel3);
@@ -201,8 +283,8 @@ public
 			this->panel2->Location = System::Drawing::Point(439, 0);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(492, 590);
-			this->panel2->TabIndex = 7;
-			this->panel2->Click += gcnew System::EventHandler(this, &LoginForm::login_click);
+			this->panel2->TabIndex = 0;
+			this->panel2->Click += gcnew System::EventHandler(this, &LoginForm::other_Click);
 			//
 			// button1
 			//
@@ -215,7 +297,7 @@ public
 			this->button1->Location = System::Drawing::Point(33, 364);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(430, 44);
-			this->button1->TabIndex = 14;
+			this->button1->TabIndex = 3;
 			this->button1->Text = L"Masuk";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &LoginForm::login_click);
@@ -227,8 +309,9 @@ public
 			this->label4->Location = System::Drawing::Point(29, 117);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(434, 51);
-			this->label4->TabIndex = 11;
+			this->label4->TabIndex = 0;
 			this->label4->Text = L"Silakan masukkan username dan password Anda untuk melanjutkan.";
+			this->label4->Click += gcnew System::EventHandler(this, &LoginForm::other_Click);
 			//
 			// label1
 			//
@@ -238,8 +321,9 @@ public
 			this->label1->Location = System::Drawing::Point(26, 67);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(105, 37);
-			this->label1->TabIndex = 12;
+			this->label1->TabIndex = 0;
 			this->label1->Text = L"Masuk";
+			this->label1->Click += gcnew System::EventHandler(this, &LoginForm::other_Click);
 			//
 			// panel3
 			//
@@ -272,6 +356,7 @@ public
 			this->password->Size = System::Drawing::Size(360, 27);
 			this->password->TabIndex = 2;
 			this->password->Text = L"Password";
+			this->password->Click += gcnew System::EventHandler(this, &LoginForm::password_Click);
 			//
 			// panel6
 			//
@@ -283,6 +368,17 @@ public
 			this->panel6->Size = System::Drawing::Size(42, 32);
 			this->panel6->TabIndex = 1;
 			//
+			// panel5
+			//
+			this->panel5->BackColor = System::Drawing::Color::Transparent;
+			this->panel5->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel5.BackgroundImage")));
+			this->panel5->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->panel5->Location = System::Drawing::Point(12, 92);
+			this->panel5->Name = L"panel5";
+			this->panel5->Size = System::Drawing::Size(406, 397);
+			this->panel5->TabIndex = 0;
+			this->panel5->Click += gcnew System::EventHandler(this, &LoginForm::other_Click);
+			//
 			// panel4
 			//
 			this->panel4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(44)), static_cast<System::Int32>(static_cast<System::Byte>(46)),
@@ -293,69 +389,8 @@ public
 			this->panel4->Location = System::Drawing::Point(0, 0);
 			this->panel4->Name = L"panel4";
 			this->panel4->Size = System::Drawing::Size(439, 590);
-			this->panel4->TabIndex = 8;
-			//
-			// panel5
-			//
-			this->panel5->BackColor = System::Drawing::Color::Transparent;
-			this->panel5->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel5.BackgroundImage")));
-			this->panel5->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
-			this->panel5->Location = System::Drawing::Point(12, 92);
-			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(406, 397);
-			this->panel5->TabIndex = 0;
-			//
-			// label3
-			//
-			this->label3->AutoSize = true;
-			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
-			this->label3->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label3->Location = System::Drawing::Point(414, 436);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(47, 19);
-			this->label3->TabIndex = 12;
-			this->label3->Text = L"Daftar";
-			this->label3->Click += gcnew System::EventHandler(this, &LoginForm::daftar_Click);
-			//
-			// label2
-			//
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(188, 411);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(142, 19);
-			this->label2->TabIndex = 11;
-			this->label2->Text = L"Belum Memiliki Akun\?";
-			//
-			// label5
-			//
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
-			this->label5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																	   static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->label5->Location = System::Drawing::Point(71, 483);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(356, 19);
-			this->label5->TabIndex = 15;
-			this->label5->Text = L"__________________________ Atau __________________________\r\n";
-			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			//
-			// label6
-			//
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
-			this->label6->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																	   static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->label6->Location = System::Drawing::Point(188, 544);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(142, 19);
-			this->label6->TabIndex = 16;
-			this->label6->Text = L"Lanjutkan tanpa log in";
+			this->panel4->TabIndex = 0;
+			this->panel4->Click += gcnew System::EventHandler(this, &LoginForm::other_Click);
 			//
 			// LoginForm
 			//
@@ -370,6 +405,7 @@ public
 			this->Name = L"LoginForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Login";
+			this->Click += gcnew System::EventHandler(this, &LoginForm::other_Click);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			this->panel2->ResumeLayout(false);
@@ -383,7 +419,7 @@ public
 	private:
 		System::Void login_click(System::Object ^ sender, System::EventArgs ^ e)
 		{
-			if (email->Text == "admin" && password->Text == "admin")
+			if (email->Text == "Email" && password->Text == "Password")
 			{
 				this->Hide();
 				// th = new Thread(dashboardForm);
@@ -400,6 +436,51 @@ public
 			this->Hide();
 			RegisterForm ^ registerForm = gcnew RegisterForm(this);
 			registerForm->ShowDialog();
+		}
+
+	private:
+		System::Void email_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			if (email->Text == "Email")
+			{
+				email->Text = "";
+			}
+
+			//
+
+			if (password->Text == "")
+			{
+				password->Text = "Password";
+			}
+		}
+
+	private:
+		System::Void password_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			if (password->Text == "Password")
+			{
+				password->Text = "";
+			}
+
+			//
+
+			if (email->Text == "")
+			{
+				email->Text = "Email";
+			}
+		}
+
+	private:
+		System::Void other_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			if (email->Text == "")
+			{
+				email->Text = "Email";
+			}
+			if (password->Text == "")
+			{
+				password->Text = "Password";
+			}
 		}
 	};
 }

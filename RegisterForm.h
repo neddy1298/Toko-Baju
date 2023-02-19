@@ -55,8 +55,9 @@ public
 		System::Windows::Forms::TextBox ^ email;
 
 	private:
-		System::Windows::Forms::Button ^ login;
+		System::Windows::Forms::Button ^ daftar;
 
+	private:
 	private:
 		System::Windows::Forms::Panel ^ panel1;
 
@@ -108,6 +109,9 @@ public
 	private:
 		System::Windows::Forms::Label ^ label4;
 
+	private:
+		System::Windows::Forms::CheckBox ^ checkBox1;
+
 	protected:
 	protected:
 	protected:
@@ -127,11 +131,12 @@ public
 			System::ComponentModel::ComponentResourceManager ^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RegisterForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->email = (gcnew System::Windows::Forms::TextBox());
-			this->login = (gcnew System::Windows::Forms::Button());
+			this->daftar = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel10 = (gcnew System::Windows::Forms::Panel());
 			this->panel7 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
@@ -157,11 +162,12 @@ public
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 															  static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(26, 57);
+			this->label1->Location = System::Drawing::Point(26, 50);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(102, 37);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Daftar";
+			this->label1->Click += gcnew System::EventHandler(this, &RegisterForm::other_Click);
 			//
 			// email
 			//
@@ -175,21 +181,23 @@ public
 			this->email->Size = System::Drawing::Size(360, 27);
 			this->email->TabIndex = 2;
 			this->email->Text = L"Email";
+			this->email->Click += gcnew System::EventHandler(this, &RegisterForm::email_Click);
 			//
-			// login
+			// daftar
 			//
-			this->login->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(32)), static_cast<System::Int32>(static_cast<System::Byte>(45)),
-																	  static_cast<System::Int32>(static_cast<System::Byte>(77)));
-			this->login->FlatAppearance->BorderSize = 0;
-			this->login->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-															 static_cast<System::Byte>(0)));
-			this->login->ForeColor = System::Drawing::Color::White;
-			this->login->Location = System::Drawing::Point(33, 394);
-			this->login->Name = L"login";
-			this->login->Size = System::Drawing::Size(433, 44);
-			this->login->TabIndex = 5;
-			this->login->Text = L"Daftar";
-			this->login->UseVisualStyleBackColor = false;
+			this->daftar->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(32)), static_cast<System::Int32>(static_cast<System::Byte>(45)),
+																	   static_cast<System::Int32>(static_cast<System::Byte>(77)));
+			this->daftar->FlatAppearance->BorderSize = 0;
+			this->daftar->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+															  static_cast<System::Byte>(0)));
+			this->daftar->ForeColor = System::Drawing::Color::White;
+			this->daftar->Location = System::Drawing::Point(33, 414);
+			this->daftar->Name = L"daftar";
+			this->daftar->Size = System::Drawing::Size(433, 44);
+			this->daftar->TabIndex = 4;
+			this->daftar->Text = L"Daftar";
+			this->daftar->UseVisualStyleBackColor = false;
+			this->daftar->Click += gcnew System::EventHandler(this, &RegisterForm::daftar_Click);
 			//
 			// panel1
 			//
@@ -197,7 +205,7 @@ public
 			this->panel1->Controls->Add(this->panel10);
 			this->panel1->Controls->Add(this->email);
 			this->panel1->Controls->Add(this->panel7);
-			this->panel1->Location = System::Drawing::Point(33, 236);
+			this->panel1->Location = System::Drawing::Point(33, 223);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(433, 61);
 			this->panel1->TabIndex = 6;
@@ -223,8 +231,9 @@ public
 			// panel2
 			//
 			this->panel2->BackColor = System::Drawing::Color::White;
+			this->panel2->Controls->Add(this->checkBox1);
 			this->panel2->Controls->Add(this->label3);
-			this->panel2->Controls->Add(this->login);
+			this->panel2->Controls->Add(this->daftar);
 			this->panel2->Controls->Add(this->label2);
 			this->panel2->Controls->Add(this->panel3);
 			this->panel2->Controls->Add(this->label4);
@@ -234,8 +243,22 @@ public
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Right;
 			this->panel2->Location = System::Drawing::Point(439, 0);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(492, 512);
-			this->panel2->TabIndex = 9;
+			this->panel2->Size = System::Drawing::Size(492, 548);
+			this->panel2->TabIndex = 0;
+			this->panel2->Click += gcnew System::EventHandler(this, &RegisterForm::other_Click);
+			//
+			// checkBox1
+			//
+			this->checkBox1->AutoSize = true;
+			this->checkBox1->Checked = true;
+			this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
+			this->checkBox1->Location = System::Drawing::Point(119, 372);
+			this->checkBox1->Name = L"checkBox1";
+			this->checkBox1->Size = System::Drawing::Size(275, 21);
+			this->checkBox1->TabIndex = 7;
+			this->checkBox1->Text = L"Anda setuju dengan syarat & ketentuan.";
+			this->checkBox1->UseVisualStyleBackColor = true;
+			this->checkBox1->CheckedChanged += gcnew System::EventHandler(this, &RegisterForm::checkBox1_CheckedChanged);
 			//
 			// label3
 			//
@@ -244,10 +267,10 @@ public
 			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 															  static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label3->Location = System::Drawing::Point(403, 462);
+			this->label3->Location = System::Drawing::Point(403, 480);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(49, 19);
-			this->label3->TabIndex = 10;
+			this->label3->TabIndex = 5;
 			this->label3->Text = L"Masuk";
 			this->label3->Click += gcnew System::EventHandler(this, &RegisterForm::label3_Click);
 			//
@@ -256,21 +279,22 @@ public
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 															  static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(179, 462);
+			this->label2->Location = System::Drawing::Point(179, 479);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(143, 19);
-			this->label2->TabIndex = 9;
+			this->label2->TabIndex = 0;
 			this->label2->Text = L"Sudah Memiliki Akun\?";
+			this->label2->Click += gcnew System::EventHandler(this, &RegisterForm::other_Click);
 			//
 			// panel3
 			//
 			this->panel3->Controls->Add(this->panel8);
 			this->panel3->Controls->Add(this->password);
 			this->panel3->Controls->Add(this->panel6);
-			this->panel3->Location = System::Drawing::Point(33, 303);
+			this->panel3->Location = System::Drawing::Point(33, 290);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(433, 61);
-			this->panel3->TabIndex = 7;
+			this->panel3->TabIndex = 3;
 			//
 			// panel8
 			//
@@ -293,6 +317,7 @@ public
 			this->password->Size = System::Drawing::Size(360, 27);
 			this->password->TabIndex = 2;
 			this->password->Text = L"Password";
+			this->password->Click += gcnew System::EventHandler(this, &RegisterForm::password_Click);
 			//
 			// panel6
 			//
@@ -308,11 +333,12 @@ public
 			//
 			this->label4->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 															  static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(29, 103);
+			this->label4->Location = System::Drawing::Point(29, 96);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(434, 51);
 			this->label4->TabIndex = 0;
 			this->label4->Text = L"Silakan isi formulir pendaftaran di bawah ini untuk membuat akun baru";
+			this->label4->Click += gcnew System::EventHandler(this, &RegisterForm::other_Click);
 			//
 			// panel9
 			//
@@ -320,7 +346,7 @@ public
 			this->panel9->Controls->Add(this->panel11);
 			this->panel9->Controls->Add(this->name);
 			this->panel9->Controls->Add(this->panel12);
-			this->panel9->Location = System::Drawing::Point(33, 169);
+			this->panel9->Location = System::Drawing::Point(33, 156);
 			this->panel9->Name = L"panel9";
 			this->panel9->Size = System::Drawing::Size(433, 61);
 			this->panel9->TabIndex = 6;
@@ -343,8 +369,9 @@ public
 			this->name->Location = System::Drawing::Point(70, 13);
 			this->name->Name = L"name";
 			this->name->Size = System::Drawing::Size(360, 27);
-			this->name->TabIndex = 2;
+			this->name->TabIndex = 1;
 			this->name->Text = L"Nama";
+			this->name->Click += gcnew System::EventHandler(this, &RegisterForm::name_Click);
 			//
 			// panel12
 			//
@@ -365,8 +392,9 @@ public
 			this->panel4->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel4->Location = System::Drawing::Point(0, 0);
 			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(931, 512);
-			this->panel4->TabIndex = 10;
+			this->panel4->Size = System::Drawing::Size(931, 548);
+			this->panel4->TabIndex = 0;
+			this->panel4->Click += gcnew System::EventHandler(this, &RegisterForm::other_Click);
 			//
 			// panel5
 			//
@@ -377,19 +405,20 @@ public
 			this->panel5->Name = L"panel5";
 			this->panel5->Size = System::Drawing::Size(406, 394);
 			this->panel5->TabIndex = 0;
+			this->panel5->Click += gcnew System::EventHandler(this, &RegisterForm::other_Click);
 			//
 			// RegisterForm
 			//
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(931, 512);
+			this->ClientSize = System::Drawing::Size(931, 548);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel4);
-			this->MaximumSize = System::Drawing::Size(949, 559);
 			this->MinimumSize = System::Drawing::Size(949, 559);
 			this->Name = L"RegisterForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Register";
+			this->Click += gcnew System::EventHandler(this, &RegisterForm::other_Click);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			this->panel2->ResumeLayout(false);
@@ -403,14 +432,15 @@ public
 		}
 
 	private:
-		System::Void button1_Click(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void daftar_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
+
 			if (name->Text != "" && email->Text != "" && password->Text != "")
 			{
 				this->Hide();
 				Dashboard ^ dashboardForm = gcnew Dashboard(this);
 				dashboardForm->ShowDialog();
-				this->Close();
+				//this->Close();
 			}
 		}
 
@@ -419,6 +449,96 @@ public
 		{
 			this->Hide();
 			loginForm->Show();
+		}
+
+	private:
+		System::Void name_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			if (name->Text == "Nama")
+			{
+				name->Text = "";
+			}
+
+			//
+
+			if (email->Text == "")
+			{
+				email->Text = "Email";
+			}
+			if (password->Text == "")
+			{
+				password->Text = "Password";
+			}
+		}
+
+	private:
+		System::Void email_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			if (email->Text == "Email")
+			{
+				email->Text = "";
+			}
+
+			//
+
+			if (name->Text == "")
+			{
+				name->Text = "Nama";
+			}
+			if (password->Text == "")
+			{
+				password->Text = "Password";
+			}
+		}
+
+	private:
+		System::Void password_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			if (password->Text == "Password")
+			{
+				password->Text = "";
+			}
+
+			//
+
+			if (name->Text == "")
+			{
+				name->Text = "Nama";
+			}
+			if (email->Text == "")
+			{
+				email->Text = "Email";
+			}
+		}
+
+	private:
+		System::Void other_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			if (name->Text == "")
+			{
+				name->Text = "Nama";
+			}
+			if (email->Text == "")
+			{
+				email->Text = "Email";
+			}
+			if (password->Text == "")
+			{
+				password->Text = "Password";
+			}
+		}
+
+	private:
+		System::Void checkBox1_CheckedChanged(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			if (checkBox1->Checked)
+			{
+				daftar->Enabled = true;
+			}
+			else
+			{
+				daftar->Enabled = false;
+			}
 		}
 	};
 }
