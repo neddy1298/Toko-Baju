@@ -24,6 +24,9 @@
     <ClCompile Include="Dashboard.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="DetailProduk.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LoginForm.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Dashboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DetailProduk.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
