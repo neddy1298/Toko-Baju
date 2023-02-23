@@ -19,7 +19,7 @@ public
 	{
 	public:
 		Form ^ loginForm;
-		String^ barang;
+		String ^ barang;
 		Dashboard(void)
 		{
 			InitializeComponent();
@@ -27,7 +27,7 @@ public
 			// TODO: Add the constructor code here
 			//
 		}
-		Dashboard(Form^ dashboardForm)
+		Dashboard(Form ^ dashboardForm)
 		{
 			loginForm = dashboardForm;
 			InitializeComponent();
@@ -53,8 +53,6 @@ public
 		System::Windows::Forms::Label ^ label10;
 		System::Windows::Forms::Label ^ label11;
 		System::Windows::Forms::Panel ^ panel11;
-
-		
 
 	protected:
 		/// <summary>
@@ -99,7 +97,6 @@ public
 		System::Windows::Forms::Label ^ nama_barang_4;
 		System::Windows::Forms::Panel ^ gambar_4;
 
-
 		/// Required designer variable.
 		/// </summary>
 		System::ComponentModel::Container ^ components;
@@ -111,7 +108,7 @@ public
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Dashboard::typeid));
+			System::ComponentModel::ComponentResourceManager ^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Dashboard::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->panel8 = (gcnew System::Windows::Forms::Panel());
 			this->panel9 = (gcnew System::Windows::Forms::Panel());
@@ -169,24 +166,23 @@ public
 			this->panel7->SuspendLayout();
 			this->panel14->SuspendLayout();
 			this->SuspendLayout();
-			// 
+			//
 			// label1
-			// 
+			//
 			this->label1->Anchor = System::Windows::Forms::AnchorStyles::Left;
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label1->Location = System::Drawing::Point(12, 26);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(233, 31);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"HARAPAN JAYA";
 			this->label1->Click += gcnew System::EventHandler(this, &Dashboard::other_Click);
-			// 
+			//
 			// panel8
-			// 
-			this->panel8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
+			//
+			this->panel8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left) | System::Windows::Forms::AnchorStyles::Right));
 			this->panel8->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->panel8->Controls->Add(this->panel9);
 			this->panel8->Controls->Add(this->search);
@@ -197,32 +193,32 @@ public
 			this->panel8->Size = System::Drawing::Size(1297, 76);
 			this->panel8->TabIndex = 3;
 			this->panel8->Click += gcnew System::EventHandler(this, &Dashboard::other_Click);
-			// 
+			//
 			// panel9
-			// 
+			//
 			this->panel9->Anchor = System::Windows::Forms::AnchorStyles::Left;
-			this->panel9->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel9.BackgroundImage")));
+			this->panel9->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel9.BackgroundImage")));
 			this->panel9->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel9->Location = System::Drawing::Point(300, 20);
 			this->panel9->Name = L"panel9";
 			this->panel9->Size = System::Drawing::Size(41, 37);
 			this->panel9->TabIndex = 2;
-			// 
+			//
 			// search
-			// 
+			//
 			this->search->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->search->BackColor = System::Drawing::Color::White;
 			this->search->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->search->Location = System::Drawing::Point(347, 20);
 			this->search->Name = L"search";
 			this->search->Size = System::Drawing::Size(660, 34);
 			this->search->TabIndex = 1;
 			this->search->Text = L"Cari barang yang Kamu butuhkan disini\r\n";
 			this->search->Click += gcnew System::EventHandler(this, &Dashboard::search_Click);
-			// 
+			//
 			// panel15
-			// 
+			//
 			this->panel15->Anchor = System::Windows::Forms::AnchorStyles::Right;
 			this->panel15->Controls->Add(this->label5);
 			this->panel15->Controls->Add(this->panel10);
@@ -230,45 +226,44 @@ public
 			this->panel15->Name = L"panel15";
 			this->panel15->Size = System::Drawing::Size(119, 61);
 			this->panel15->TabIndex = 3;
-			// 
+			//
 			// label5
-			// 
+			//
 			this->label5->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label5->Location = System::Drawing::Point(53, 17);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(61, 27);
 			this->label5->TabIndex = 3;
 			this->label5->Text = L"Chart";
-			// 
+			//
 			// panel10
-			// 
+			//
 			this->panel10->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->panel10->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel10.BackgroundImage")));
+			this->panel10->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel10.BackgroundImage")));
 			this->panel10->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel10->Location = System::Drawing::Point(6, 13);
 			this->panel10->Name = L"panel10";
 			this->panel10->Size = System::Drawing::Size(41, 34);
 			this->panel10->TabIndex = 2;
 			this->panel10->Click += gcnew System::EventHandler(this, &Dashboard::other_Click);
-			// 
+			//
 			// panel12
-			// 
+			//
 			this->panel12->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->panel12->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel12.BackgroundImage")));
+			this->panel12->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel12.BackgroundImage")));
 			this->panel12->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel12->Location = System::Drawing::Point(6, 10);
 			this->panel12->Name = L"panel12";
 			this->panel12->Size = System::Drawing::Size(47, 40);
 			this->panel12->TabIndex = 2;
 			this->panel12->Click += gcnew System::EventHandler(this, &Dashboard::other_Click);
-			// 
+			//
 			// flowLayoutPanel1
-			// 
-			this->flowLayoutPanel1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
+			//
+			this->flowLayoutPanel1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left) | System::Windows::Forms::AnchorStyles::Right));
 			this->flowLayoutPanel1->AutoScroll = true;
 			this->flowLayoutPanel1->Controls->Add(this->card_1);
 			this->flowLayoutPanel1->Controls->Add(this->card_2);
@@ -278,14 +273,14 @@ public
 			this->flowLayoutPanel1->Controls->Add(this->panel3);
 			this->flowLayoutPanel1->Controls->Add(this->panel5);
 			this->flowLayoutPanel1->Controls->Add(this->panel7);
-			this->flowLayoutPanel1->Location = System::Drawing::Point(32, 137);
+			this->flowLayoutPanel1->Location = System::Drawing::Point(40, 249);
 			this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
-			this->flowLayoutPanel1->Size = System::Drawing::Size(1234, 572);
+			this->flowLayoutPanel1->Size = System::Drawing::Size(1219, 460);
 			this->flowLayoutPanel1->TabIndex = 4;
 			this->flowLayoutPanel1->TabStop = true;
-			// 
+			//
 			// card_1
-			// 
+			//
 			this->card_1->BackColor = System::Drawing::Color::Transparent;
 			this->card_1->Controls->Add(this->harga_1);
 			this->card_1->Controls->Add(this->nama_barang_1);
@@ -297,12 +292,12 @@ public
 			this->card_1->TabIndex = 6;
 			this->card_1->Tag = L"1";
 			this->card_1->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_1_Click);
-			// 
+			//
 			// harga_1
-			// 
+			//
 			this->harga_1->AutoSize = true;
 			this->harga_1->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															   static_cast<System::Byte>(0)));
 			this->harga_1->Location = System::Drawing::Point(49, 271);
 			this->harga_1->Name = L"harga_1";
 			this->harga_1->Size = System::Drawing::Size(116, 27);
@@ -310,11 +305,11 @@ public
 			this->harga_1->Tag = L"1";
 			this->harga_1->Text = L"RP 125.000";
 			this->harga_1->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_1_Click);
-			// 
+			//
 			// nama_barang_1
-			// 
+			//
 			this->nama_barang_1->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 10.2F, System::Drawing::FontStyle::Bold,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+																	 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->nama_barang_1->Location = System::Drawing::Point(49, 223);
 			this->nama_barang_1->Name = L"nama_barang_1";
 			this->nama_barang_1->Size = System::Drawing::Size(204, 48);
@@ -322,10 +317,10 @@ public
 			this->nama_barang_1->Tag = L"1";
 			this->nama_barang_1->Text = L"T-shirt pria / baju kaos samurai jepang / baju kaos warna putih";
 			this->nama_barang_1->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_1_Click);
-			// 
+			//
 			// gambar_1
-			// 
-			this->gambar_1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"gambar_1.BackgroundImage")));
+			//
+			this->gambar_1->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"gambar_1.BackgroundImage")));
 			this->gambar_1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->gambar_1->Location = System::Drawing::Point(49, 3);
 			this->gambar_1->Name = L"gambar_1";
@@ -333,9 +328,9 @@ public
 			this->gambar_1->TabIndex = 3;
 			this->gambar_1->Tag = L"1";
 			this->gambar_1->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_1_Click);
-			// 
+			//
 			// card_2
-			// 
+			//
 			this->card_2->BackColor = System::Drawing::Color::Transparent;
 			this->card_2->Controls->Add(this->harga_2);
 			this->card_2->Controls->Add(this->nama_barang_2);
@@ -346,42 +341,42 @@ public
 			this->card_2->Size = System::Drawing::Size(296, 312);
 			this->card_2->TabIndex = 7;
 			this->card_2->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_2_Click);
-			// 
+			//
 			// harga_2
-			// 
+			//
 			this->harga_2->AutoSize = true;
 			this->harga_2->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															   static_cast<System::Byte>(0)));
 			this->harga_2->Location = System::Drawing::Point(49, 271);
 			this->harga_2->Name = L"harga_2";
 			this->harga_2->Size = System::Drawing::Size(107, 27);
 			this->harga_2->TabIndex = 5;
 			this->harga_2->Text = L"Rp 99.000";
 			this->harga_2->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_2_Click);
-			// 
+			//
 			// nama_barang_2
-			// 
+			//
 			this->nama_barang_2->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 10.2F, System::Drawing::FontStyle::Bold,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+																	 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->nama_barang_2->Location = System::Drawing::Point(49, 223);
 			this->nama_barang_2->Name = L"nama_barang_2";
 			this->nama_barang_2->Size = System::Drawing::Size(204, 48);
 			this->nama_barang_2->TabIndex = 4;
 			this->nama_barang_2->Text = L"Horizen T-shirt CAT VERY BUSY - White Reguler, M";
 			this->nama_barang_2->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_2_Click);
-			// 
+			//
 			// gambar_2
-			// 
-			this->gambar_2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"gambar_2.BackgroundImage")));
+			//
+			this->gambar_2->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"gambar_2.BackgroundImage")));
 			this->gambar_2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->gambar_2->Location = System::Drawing::Point(49, 3);
 			this->gambar_2->Name = L"gambar_2";
 			this->gambar_2->Size = System::Drawing::Size(204, 213);
 			this->gambar_2->TabIndex = 3;
 			this->gambar_2->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_2_Click);
-			// 
+			//
 			// card_3
-			// 
+			//
 			this->card_3->BackColor = System::Drawing::Color::Transparent;
 			this->card_3->Controls->Add(this->harga_3);
 			this->card_3->Controls->Add(this->nama_barang_3);
@@ -392,42 +387,42 @@ public
 			this->card_3->Size = System::Drawing::Size(296, 312);
 			this->card_3->TabIndex = 8;
 			this->card_3->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_3_Click);
-			// 
+			//
 			// harga_3
-			// 
+			//
 			this->harga_3->AutoSize = true;
 			this->harga_3->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															   static_cast<System::Byte>(0)));
 			this->harga_3->Location = System::Drawing::Point(49, 271);
 			this->harga_3->Name = L"harga_3";
 			this->harga_3->Size = System::Drawing::Size(107, 27);
 			this->harga_3->TabIndex = 5;
 			this->harga_3->Text = L"RP.49.500";
 			this->harga_3->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_3_Click);
-			// 
+			//
 			// nama_barang_3
-			// 
+			//
 			this->nama_barang_3->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 10.2F, System::Drawing::FontStyle::Bold,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+																	 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->nama_barang_3->Location = System::Drawing::Point(49, 223);
 			this->nama_barang_3->Name = L"nama_barang_3";
 			this->nama_barang_3->Size = System::Drawing::Size(204, 48);
 			this->nama_barang_3->TabIndex = 4;
 			this->nama_barang_3->Text = L"Baju Kaos Pria Lengan Pendek Kayser Time T-Shrt Distro Keren - Black yellow, M";
 			this->nama_barang_3->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_3_Click);
-			// 
+			//
 			// gambar_3
-			// 
-			this->gambar_3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"gambar_3.BackgroundImage")));
+			//
+			this->gambar_3->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"gambar_3.BackgroundImage")));
 			this->gambar_3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->gambar_3->Location = System::Drawing::Point(49, 3);
 			this->gambar_3->Name = L"gambar_3";
 			this->gambar_3->Size = System::Drawing::Size(204, 213);
 			this->gambar_3->TabIndex = 3;
 			this->gambar_3->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_3_Click);
-			// 
+			//
 			// card_4
-			// 
+			//
 			this->card_4->BackColor = System::Drawing::Color::Transparent;
 			this->card_4->Controls->Add(this->harga_4);
 			this->card_4->Controls->Add(this->nama_barang_4);
@@ -438,42 +433,42 @@ public
 			this->card_4->Size = System::Drawing::Size(296, 312);
 			this->card_4->TabIndex = 9;
 			this->card_4->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_4_Click);
-			// 
+			//
 			// harga_4
-			// 
+			//
 			this->harga_4->AutoSize = true;
 			this->harga_4->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															   static_cast<System::Byte>(0)));
 			this->harga_4->Location = System::Drawing::Point(49, 271);
 			this->harga_4->Name = L"harga_4";
 			this->harga_4->Size = System::Drawing::Size(107, 27);
 			this->harga_4->TabIndex = 5;
 			this->harga_4->Text = L"RP.25.000";
 			this->harga_4->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_4_Click);
-			// 
+			//
 			// nama_barang_4
-			// 
+			//
 			this->nama_barang_4->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 10.2F, System::Drawing::FontStyle::Bold,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+																	 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->nama_barang_4->Location = System::Drawing::Point(49, 223);
 			this->nama_barang_4->Name = L"nama_barang_4";
 			this->nama_barang_4->Size = System::Drawing::Size(204, 48);
 			this->nama_barang_4->TabIndex = 4;
 			this->nama_barang_4->Text = L"T-shirt pria / baju kaos samurai jepang / baju kaos warna putih";
 			this->nama_barang_4->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_4_Click);
-			// 
+			//
 			// gambar_4
-			// 
-			this->gambar_4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"gambar_4.BackgroundImage")));
+			//
+			this->gambar_4->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"gambar_4.BackgroundImage")));
 			this->gambar_4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->gambar_4->Location = System::Drawing::Point(49, 3);
 			this->gambar_4->Name = L"gambar_4";
 			this->gambar_4->Size = System::Drawing::Size(204, 213);
 			this->gambar_4->TabIndex = 3;
 			this->gambar_4->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_4_Click);
-			// 
+			//
 			// panel1
-			// 
+			//
 			this->panel1->BackColor = System::Drawing::Color::Transparent;
 			this->panel1->Controls->Add(this->label2);
 			this->panel1->Controls->Add(this->label3);
@@ -483,40 +478,40 @@ public
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(296, 312);
 			this->panel1->TabIndex = 10;
-			// 
+			//
 			// label2
-			// 
+			//
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label2->Location = System::Drawing::Point(49, 271);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(107, 27);
 			this->label2->TabIndex = 5;
 			this->label2->Text = L"RP.47.000";
-			// 
+			//
 			// label3
-			// 
+			//
 			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 10.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label3->Location = System::Drawing::Point(49, 223);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(204, 48);
 			this->label3->TabIndex = 4;
 			this->label3->Text = L"Baju Kaos Pria Lengan Pendek Atasan Cowok Tshirt Taurus Fashion Distro - Abu-abu,"
-				L" XS";
-			// 
+								 L" XS";
+			//
 			// panel2
-			// 
-			this->panel2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel2.BackgroundImage")));
+			//
+			this->panel2->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel2.BackgroundImage")));
 			this->panel2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel2->Location = System::Drawing::Point(49, 3);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(204, 213);
 			this->panel2->TabIndex = 3;
-			// 
+			//
 			// panel3
-			// 
+			//
 			this->panel3->BackColor = System::Drawing::Color::Transparent;
 			this->panel3->Controls->Add(this->label4);
 			this->panel3->Controls->Add(this->label7);
@@ -526,39 +521,39 @@ public
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(296, 312);
 			this->panel3->TabIndex = 11;
-			// 
+			//
 			// label4
-			// 
+			//
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label4->Location = System::Drawing::Point(49, 271);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(107, 27);
 			this->label4->TabIndex = 5;
 			this->label4->Text = L"RP.44.900";
-			// 
+			//
 			// label7
-			// 
+			//
 			this->label7->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 10.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label7->Location = System::Drawing::Point(49, 223);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(204, 48);
 			this->label7->TabIndex = 4;
 			this->label7->Text = L"Baju Kaos Pria Distro Lengan Pendek Kayser Turns Motif Sablon Premium - Biru, M";
-			// 
+			//
 			// panel4
-			// 
-			this->panel4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel4.BackgroundImage")));
+			//
+			this->panel4->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel4.BackgroundImage")));
 			this->panel4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel4->Location = System::Drawing::Point(49, 3);
 			this->panel4->Name = L"panel4";
 			this->panel4->Size = System::Drawing::Size(204, 213);
 			this->panel4->TabIndex = 3;
-			// 
+			//
 			// panel5
-			// 
+			//
 			this->panel5->BackColor = System::Drawing::Color::Transparent;
 			this->panel5->Controls->Add(this->label8);
 			this->panel5->Controls->Add(this->label9);
@@ -568,39 +563,39 @@ public
 			this->panel5->Name = L"panel5";
 			this->panel5->Size = System::Drawing::Size(296, 312);
 			this->panel5->TabIndex = 12;
-			// 
+			//
 			// label8
-			// 
+			//
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label8->Location = System::Drawing::Point(49, 271);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(107, 27);
 			this->label8->TabIndex = 5;
 			this->label8->Text = L"RP.24.000";
-			// 
+			//
 			// label9
-			// 
+			//
 			this->label9->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 10.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label9->Location = System::Drawing::Point(49, 223);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(204, 48);
 			this->label9->TabIndex = 4;
 			this->label9->Text = L"N10 Kaos pria distro murah | Size M L XL XXL XXXL/Baju oblong / CEWEK - Putih, M";
-			// 
+			//
 			// panel6
-			// 
-			this->panel6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel6.BackgroundImage")));
+			//
+			this->panel6->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel6.BackgroundImage")));
 			this->panel6->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel6->Location = System::Drawing::Point(49, 3);
 			this->panel6->Name = L"panel6";
 			this->panel6->Size = System::Drawing::Size(204, 213);
 			this->panel6->TabIndex = 3;
-			// 
+			//
 			// panel7
-			// 
+			//
 			this->panel7->BackColor = System::Drawing::Color::Transparent;
 			this->panel7->Controls->Add(this->label10);
 			this->panel7->Controls->Add(this->label11);
@@ -610,77 +605,75 @@ public
 			this->panel7->Name = L"panel7";
 			this->panel7->Size = System::Drawing::Size(296, 312);
 			this->panel7->TabIndex = 12;
-			// 
+			//
 			// label10
-			// 
+			//
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															   static_cast<System::Byte>(0)));
 			this->label10->Location = System::Drawing::Point(49, 271);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(107, 27);
 			this->label10->TabIndex = 5;
 			this->label10->Text = L"RP.29.900";
-			// 
+			//
 			// label11
-			// 
+			//
 			this->label11->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 10.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															   static_cast<System::Byte>(0)));
 			this->label11->Location = System::Drawing::Point(49, 223);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(204, 48);
 			this->label11->TabIndex = 4;
 			this->label11->Text = L"kaos murah baju pria t shirt distro astronot bulan - L";
-			// 
+			//
 			// panel11
-			// 
-			this->panel11->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel11.BackgroundImage")));
+			//
+			this->panel11->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel11.BackgroundImage")));
 			this->panel11->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel11->Location = System::Drawing::Point(49, 3);
 			this->panel11->Name = L"panel11";
 			this->panel11->Size = System::Drawing::Size(204, 213);
 			this->panel11->TabIndex = 3;
-			// 
+			//
 			// label6
-			// 
+			//
 			this->label6->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label6->Location = System::Drawing::Point(59, 17);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(43, 27);
 			this->label6->TabIndex = 4;
 			this->label6->Text = L"Exit";
-			// 
+			//
 			// panel14
-			// 
-			this->panel14->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
+			//
+			this->panel14->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left) | System::Windows::Forms::AnchorStyles::Right));
 			this->panel14->Controls->Add(this->comboBox1);
 			this->panel14->Location = System::Drawing::Point(40, 82);
 			this->panel14->Name = L"panel14";
 			this->panel14->Size = System::Drawing::Size(1219, 49);
 			this->panel14->TabIndex = 5;
-			// 
+			//
 			// comboBox1
-			// 
+			//
 			this->comboBox1->Anchor = System::Windows::Forms::AnchorStyles::Right;
 			this->comboBox1->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+																 static_cast<System::Byte>(0)));
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(5) {
+			this->comboBox1->Items->AddRange(gcnew cli::array<System::Object ^>(5){
 				L"Paling Sesuai", L"Ulasan", L"Terbaru", L"Harga Tertinggi",
-					L"Harga Terendah"
-			});
+				L"Harga Terendah"});
 			this->comboBox1->Location = System::Drawing::Point(940, 9);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(263, 30);
 			this->comboBox1->TabIndex = 1;
 			this->comboBox1->Text = L"Urutkan:";
-			// 
+			//
 			// Dashboard
-			// 
+			//
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
@@ -716,9 +709,9 @@ public
 			this->panel7->PerformLayout();
 			this->panel14->ResumeLayout(false);
 			this->ResumeLayout(false);
-
 		}
 
+	private:
 		System::Void panel12_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
 			this->Hide();
@@ -745,7 +738,6 @@ public
 			}
 		}
 
-	private:
 		System::Void produk_card_1_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
 
@@ -786,5 +778,5 @@ public
 			// valueToSend->Tag = valueToSend;
 			detailForm->ShowDialog();
 		}
-};
+	};
 }
