@@ -27,6 +27,12 @@
     <ClCompile Include="DetailProduk.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="Keranjang.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckOut.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LoginForm.h">
@@ -39,6 +45,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DetailProduk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Keranjang.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckOut.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

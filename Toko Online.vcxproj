@@ -124,16 +124,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CheckOut.cpp" />
     <ClCompile Include="Dashboard.cpp" />
     <ClCompile Include="DetailProduk.cpp" />
+    <ClCompile Include="Keranjang.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="RegisterForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CheckOut.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Dashboard.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="DetailProduk.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Keranjang.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="LoginForm.h">
@@ -144,11 +152,17 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailProduk.resx">
       <DependentUpon>DetailProduk.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keranjang.resx">
+      <DependentUpon>Keranjang.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>
