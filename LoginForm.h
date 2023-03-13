@@ -1,6 +1,9 @@
 #pragma once
+#include <Windows.h>
 #include "RegisterForm.h";
 #include "Dashboard.h"
+
+#include <msclr/marshal_cppstd.h>
 
 namespace TokoOnline
 {
@@ -392,11 +395,18 @@ public
 	private:
 		System::Void login_click(System::Object ^ sender, System::EventArgs ^ e)
 		{
-			if (email->Text == "Email" && password->Text == "Password")
+			if (email->Text == "admin" && password->Text == "admin")
 			{
 				this->Hide();
 				Dashboard ^ dashboardForm = gcnew Dashboard(this);
 				dashboardForm->ShowDialog();
+			}
+			else
+			{
+				
+				MessageBox::Show("Email Atau Password Salah", "Error", MessageBoxButtons::OK, MessageBoxIcon::Information);
+
+				
 			}
 		}
 

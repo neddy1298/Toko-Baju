@@ -125,8 +125,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CheckOut.cpp" />
+    <ClCompile Include="contoh1.cpp" />
     <ClCompile Include="Dashboard.cpp" />
     <ClCompile Include="DetailProduk.cpp" />
+    <ClCompile Include="FormBayar.cpp" />
     <ClCompile Include="Keranjang.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="RegisterForm.cpp" />
@@ -135,10 +137,16 @@
     <ClInclude Include="CheckOut.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="contoh1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Dashboard.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="DetailProduk.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormBayar.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Keranjang.h">
@@ -155,11 +163,17 @@
     <EmbeddedResource Include="CheckOut.resx">
       <DependentUpon>CheckOut.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="contoh1.resx">
+      <DependentUpon>contoh1.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailProduk.resx">
       <DependentUpon>DetailProduk.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBayar.resx">
+      <DependentUpon>FormBayar.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Keranjang.resx">
       <DependentUpon>Keranjang.h</DependentUpon>
