@@ -43,7 +43,7 @@ public
 
 			if (data == "1")
 			{
-				nama_barang = "T-shirt pria / baju kaos samurai jepang / baju kaos warna putih";
+				nama_barang = "T-shirt pria / baju kaos samurai jepang / baju kaos";
 				harga = "25.000";
 				deskripsi = "Kondisi: Baru \n\
 					Berat Satuan : 200 g \n\
@@ -71,7 +71,7 @@ public
 			}
 			else if (data == "2")
 			{
-				nama_barang = "Horizen T-shirt CAT VERY BUSY - White Reguler, M";
+				nama_barang = "Horizen T-shirt CAT VERY BUSY";
 				harga = "99.000";
 				deskripsi = "Kondisi: Baru\n \
 					Berat Satuan : 200 g\n \
@@ -94,7 +94,7 @@ public
 			}
 			else if (data == "3")
 			{
-				nama_barang = "Baju Kaos Pria Lengan Pendek Kayser Time T-Shrt Distro Keren - Black yellow, M";
+				nama_barang = "Baju Kaos Pria Lengan Pendek Kayser Time T-Shrt Distro Keren";
 				harga = "49.500";
 				deskripsi = "Kondisi: Baru \n \
 					Berat Satuan : 350 g \n \
@@ -128,7 +128,7 @@ public
 			}
 			else if (data == "4")
 			{
-				nama_barang = "Baju Kaos Pria Distro Lengan Pendek Kayser Falls Terlaris T-Shirt Kere - Hitam, L";
+				nama_barang = "Baju Kaos Pria Distro Lengan Pendek Kayser Falls Terlaris T-Shirt Kere";
 				harga = "42.900";
 				deskripsi = "Kondisi: Baru\n \
 					Berat Satuan : 300 g\n \
@@ -157,6 +157,82 @@ public
 					\n \
 					mengutamakan quality control sebelum pengiriman\n \
 					- Pengiriman 100 % AMAN";
+			}
+			else if (data == "5")
+			{
+				nama_barang = "Baju Kaos Pria Lengan Pendek Atasan Cowok Tshirt Taurus Fashion Distro";
+				harga = "49.000";
+				deskripsi = "Kondisi: Baru\n \
+					Berat Satuan : 300 g\n \
+					Kategori : Kaos Pria\n \
+					Etalase : Kaos Pria\n \
+					KETERANGAN : \n \n \
+				Bahan : babyterry \n \
+				Ukuran XS : ld 88cm pj 59cm \n \
+				Ukuran S / M : ld 94cm pj 60cm \n \
+				Ukuran L : ld 104cm pj 68cm \n \
+				Ukuran XL : ld 110cm pj 70cm \n \
+				Ukuran XXL : ld 120cm pj 78cm\n \
+				\n \
+				Motif sablon, goodquality\n \
+				Tersedia 11 warna";
+			}
+			else if (data == "6")
+			{
+				nama_barang = "Baju Kaos Pria Lengan Pendek Atasan Cowok Tshirt Fashion Distro";
+				harga = "69.000";
+				deskripsi = "Kondisi: Baru\n \
+					Berat Satuan : 300 g\n \
+					Kategori : Kaos Pria\n \
+					Etalase : Kaos Pria\n \
+					KETERANGAN : \n \n \
+				Bahan : babyterry \n \
+				Ukuran XS : ld 88cm pj 59cm \n \
+				Ukuran S / M : ld 94cm pj 60cm \n \
+				Ukuran L : ld 104cm pj 68cm \n \
+				Ukuran XL : ld 110cm pj 70cm \n \
+				Ukuran XXL : ld 120cm pj 78cm\n \
+				\n \
+				Motif sablon, goodquality\n \
+				Tersedia 11 warna";
+			}
+			else if (data == "7")
+			{
+				nama_barang = "Baju Kaos Pria Lengan Pendek Atasan Cowok Tshirt Fashion Distro";
+				harga = "99.000";
+				deskripsi = "Kondisi: Baru\n \
+					Berat Satuan : 300 g\n \
+					Kategori : Kaos Pria\n \
+					Etalase : Kaos Pria\n \
+					KETERANGAN : \n \n \
+				Bahan : babyterry \n \
+				Ukuran XS : ld 88cm pj 59cm \n \
+				Ukuran S / M : ld 94cm pj 60cm \n \
+				Ukuran L : ld 104cm pj 68cm \n \
+				Ukuran XL : ld 110cm pj 70cm \n \
+				Ukuran XXL : ld 120cm pj 78cm\n \
+				\n \
+				Motif sablon, goodquality\n \
+				Tersedia 11 warna";
+			}
+			else if (data == "8")
+			{
+				nama_barang = "Baju Kaos Pria Lengan Pendek Atasan Cowok Tshirt Fashion Distro";
+				harga = "42.000";
+				deskripsi = "Kondisi: Baru\n \
+					Berat Satuan : 300 g\n \
+					Kategori : Kaos Pria\n \
+					Etalase : Kaos Pria\n \
+					KETERANGAN : \n \n \
+				Bahan : babyterry \n \
+				Ukuran XS : ld 88cm pj 59cm \n \
+				Ukuran S / M : ld 94cm pj 60cm \n \
+				Ukuran L : ld 104cm pj 68cm \n \
+				Ukuran XL : ld 110cm pj 70cm \n \
+				Ukuran XXL : ld 120cm pj 78cm\n \
+				\n \
+				Motif sablon, goodquality\n \
+				Tersedia 11 warna";
 			}
 			produk_text_1->Text = nama_barang;
 			harga_barang->Text = harga;
