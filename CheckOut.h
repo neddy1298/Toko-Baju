@@ -5,7 +5,6 @@
 #include <msclr/marshal_cppstd.h>
 #include "FormBayar.h"
 
-
 namespace TokoOnline
 {
 
@@ -68,7 +67,7 @@ public
 			harga_barang->Text = String::Format("Rp.{0:N0}", hargaText);
 			image_produk->BackgroundImage = Image::FromFile("Assets/Dashboard/baju_" + data + ".jpg");
 
-			jumlah_barang->Value = jumlah;
+			jumlah_barang->Text = System::Convert::ToString(jumlah) + " Baju";
 		}
 
 	protected:
@@ -87,8 +86,8 @@ public
 		System::Windows::Forms::Panel ^ right_panel;
 		System::Windows::Forms::Panel ^ left_panel;
 		System::Windows::Forms::Panel ^ card_1;
-		System::Windows::Forms::Panel ^ hapus;
-		System::Windows::Forms::NumericUpDown ^ jumlah_barang;
+
+
 		System::Windows::Forms::Label ^ harga_barang;
 		System::Windows::Forms::Label ^ namaBarang;
 		System::Windows::Forms::Panel ^ image_produk;
@@ -116,11 +115,22 @@ public
 		System::Windows::Forms::Label ^ label18;
 		System::Windows::Forms::Label ^ label5;
 		System::Windows::Forms::RichTextBox ^ richTextBox1;
-	private: System::Windows::Forms::Button^ button2;
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Label^ label9;
-	private: System::Windows::Forms::ComboBox^ comboBox3;
-		   /// <summary>
+
+	private:
+		System::Windows::Forms::Button ^ button2;
+
+	private:
+		System::Windows::Forms::Button ^ button1;
+
+	private:
+		System::Windows::Forms::Label ^ label9;
+
+	private:
+		System::Windows::Forms::ComboBox ^ comboBox3;
+private: System::Windows::Forms::Label^ jumlah_barang;
+
+private: System::Windows::Forms::Label^ label20;
+	   /// <summary>
 		/// Required designer variable.
 		/// </summary>
 		System::ComponentModel::Container ^ components;
@@ -134,6 +144,8 @@ public
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(CheckOut::typeid));
 			this->right_panel = (gcnew System::Windows::Forms::Panel());
+			this->jumlah_barang = (gcnew System::Windows::Forms::Label());
+			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->label17 = (gcnew System::Windows::Forms::Label());
 			this->Total_tagihan = (gcnew System::Windows::Forms::Label());
@@ -162,8 +174,6 @@ public
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->card_1 = (gcnew System::Windows::Forms::Panel());
-			this->hapus = (gcnew System::Windows::Forms::Panel());
-			this->jumlah_barang = (gcnew System::Windows::Forms::NumericUpDown());
 			this->harga_barang = (gcnew System::Windows::Forms::Label());
 			this->namaBarang = (gcnew System::Windows::Forms::Label());
 			this->image_produk = (gcnew System::Windows::Forms::Panel());
@@ -172,11 +182,12 @@ public
 			this->right_panel->SuspendLayout();
 			this->left_panel->SuspendLayout();
 			this->card_1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->jumlah_barang))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// right_panel
 			// 
+			this->right_panel->Controls->Add(this->jumlah_barang);
+			this->right_panel->Controls->Add(this->label20);
 			this->right_panel->Controls->Add(this->button2);
 			this->right_panel->Controls->Add(this->label17);
 			this->right_panel->Controls->Add(this->Total_tagihan);
@@ -200,11 +211,33 @@ public
 			this->right_panel->TabIndex = 3;
 			this->right_panel->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &CheckOut::right_panel_Paint);
 			// 
+			// jumlah_barang
+			// 
+			this->jumlah_barang->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->jumlah_barang->Location = System::Drawing::Point(251, 241);
+			this->jumlah_barang->Name = L"jumlah_barang";
+			this->jumlah_barang->Size = System::Drawing::Size(103, 22);
+			this->jumlah_barang->TabIndex = 17;
+			this->jumlah_barang->Text = L"0";
+			this->jumlah_barang->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
+			// label20
+			// 
+			this->label20->AutoSize = true;
+			this->label20->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label20->Location = System::Drawing::Point(40, 241);
+			this->label20->Name = L"label20";
+			this->label20->Size = System::Drawing::Size(100, 22);
+			this->label20->TabIndex = 16;
+			this->label20->Text = L"Total Barang";
+			// 
 			// button2
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(48, 502);
+			this->button2->Location = System::Drawing::Point(48, 535);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(306, 55);
 			this->button2->TabIndex = 15;
@@ -216,7 +249,7 @@ public
 			// 
 			this->label17->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label17->Location = System::Drawing::Point(251, 322);
+			this->label17->Location = System::Drawing::Point(251, 355);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(103, 22);
 			this->label17->TabIndex = 14;
@@ -227,11 +260,11 @@ public
 			// 
 			this->Total_tagihan->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->Total_tagihan->Location = System::Drawing::Point(247, 461);
+			this->Total_tagihan->Location = System::Drawing::Point(247, 494);
 			this->Total_tagihan->Name = L"Total_tagihan";
 			this->Total_tagihan->Size = System::Drawing::Size(107, 22);
 			this->Total_tagihan->TabIndex = 13;
-			this->Total_tagihan->Text = L"Rp. 1.000";
+			this->Total_tagihan->Text = L"Rp. 5.000";
 			this->Total_tagihan->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
 			// 
 			// label15
@@ -239,7 +272,7 @@ public
 			this->label15->AutoSize = true;
 			this->label15->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label15->Location = System::Drawing::Point(43, 457);
+			this->label15->Location = System::Drawing::Point(43, 490);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(129, 27);
 			this->label15->TabIndex = 12;
@@ -249,7 +282,7 @@ public
 			// 
 			this->label12->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label12->Location = System::Drawing::Point(247, 410);
+			this->label12->Location = System::Drawing::Point(247, 443);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(107, 22);
 			this->label12->TabIndex = 11;
@@ -261,7 +294,7 @@ public
 			this->label13->AutoSize = true;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label13->Location = System::Drawing::Point(43, 410);
+			this->label13->Location = System::Drawing::Point(43, 443);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(145, 22);
 			this->label13->TabIndex = 10;
@@ -272,7 +305,7 @@ public
 			this->label14->AutoSize = true;
 			this->label14->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label14->Location = System::Drawing::Point(43, 363);
+			this->label14->Location = System::Drawing::Point(43, 396);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(125, 27);
 			this->label14->TabIndex = 9;
@@ -283,7 +316,7 @@ public
 			this->label11->AutoSize = true;
 			this->label11->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label11->Location = System::Drawing::Point(43, 322);
+			this->label11->Location = System::Drawing::Point(43, 355);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(158, 22);
 			this->label11->TabIndex = 8;
@@ -293,7 +326,7 @@ public
 			// 
 			this->ongkos_kirim->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->ongkos_kirim->Location = System::Drawing::Point(247, 281);
+			this->ongkos_kirim->Location = System::Drawing::Point(251, 314);
 			this->ongkos_kirim->Name = L"ongkos_kirim";
 			this->ongkos_kirim->Size = System::Drawing::Size(103, 22);
 			this->ongkos_kirim->TabIndex = 7;
@@ -305,7 +338,7 @@ public
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label10->Location = System::Drawing::Point(43, 281);
+			this->label10->Location = System::Drawing::Point(43, 314);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(149, 22);
 			this->label10->TabIndex = 6;
@@ -315,7 +348,7 @@ public
 			// 
 			this->label7->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(248, 242);
+			this->label7->Location = System::Drawing::Point(248, 275);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(106, 22);
 			this->label7->TabIndex = 5;
@@ -327,7 +360,7 @@ public
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(43, 241);
+			this->label8->Location = System::Drawing::Point(43, 274);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(165, 22);
 			this->label8->TabIndex = 4;
@@ -516,8 +549,6 @@ public
 			// 
 			// card_1
 			// 
-			this->card_1->Controls->Add(this->hapus);
-			this->card_1->Controls->Add(this->jumlah_barang);
 			this->card_1->Controls->Add(this->harga_barang);
 			this->card_1->Controls->Add(this->namaBarang);
 			this->card_1->Controls->Add(this->image_produk);
@@ -525,26 +556,6 @@ public
 			this->card_1->Name = L"card_1";
 			this->card_1->Size = System::Drawing::Size(774, 133);
 			this->card_1->TabIndex = 1;
-			// 
-			// hapus
-			// 
-			this->hapus->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
-			this->hapus->Location = System::Drawing::Point(562, 87);
-			this->hapus->Name = L"hapus";
-			this->hapus->Size = System::Drawing::Size(36, 30);
-			this->hapus->TabIndex = 15;
-			// 
-			// jumlah_barang
-			// 
-			this->jumlah_barang->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->jumlah_barang->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->jumlah_barang->Location = System::Drawing::Point(616, 87);
-			this->jumlah_barang->Name = L"jumlah_barang";
-			this->jumlah_barang->Size = System::Drawing::Size(142, 30);
-			this->jumlah_barang->TabIndex = 14;
-			this->jumlah_barang->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->jumlah_barang->ValueChanged += gcnew System::EventHandler(this, &CheckOut::jumlah_barang_ValueChanged);
 			// 
 			// harga_barang
 			// 
@@ -613,11 +624,26 @@ public
 			this->left_panel->PerformLayout();
 			this->card_1->ResumeLayout(false);
 			this->card_1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->jumlah_barang))->EndInit();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
+	protected:
+		void priceChange()
+		{
+			String ^ ongkosCleaned = ongkos_kirim->Text->Replace("Rp.", "")->Replace(".", "");
+			String ^ jumlahCleaned = jumlah_barang->Text;
+			String ^ hargaCleaned = harga_1_barang->Text->Replace("Rp.", "")->Replace(".", "");
+
+			int ongkosKirim = System::Convert::ToInt64(ongkosCleaned);
+			int jumlahBarang = System::Convert::ToInt64(jumlahCleaned);
+			int harga = System::Convert::ToInt64(hargaCleaned);
+
+			int subtotal = (jumlahBarang * harga) + ongkosKirim + 5000;
+
+			Total_tagihan->Text = String::Format("Rp.{0:N0}", subtotal);
+		}
+
 	private:
 		System::Void CloseForm(System::Object ^ sender, System::EventArgs ^ e)
 		{
@@ -637,61 +663,27 @@ public
 			{
 				ongkos_kirim->Text = "Rp.9.000";
 			}
-
-			String ^ ongkosCleaned = harga_1_barang->Text->Replace("Rp.", "")->Replace(".", "");
-			String ^ jumlahCleaned = jumlah_barang->Text->Replace("Rp.", "")->Replace(".", "");
-			String ^ hargaCleaned = harga_1_barang->Text->Replace("Rp.", "")->Replace(".", "");
-
-			int ongkosKirim = System::Convert::ToInt64(ongkosCleaned);
-			int jumlahBarang = System::Convert::ToInt64(jumlahCleaned);
-			int harga = System::Convert::ToInt64(hargaCleaned);
-
-			int subtotal = ongkosKirim + (jumlahBarang * harga) + 5000.0;
-
-			Total_tagihan->Text = String::Format("Rp.{0:N0}", subtotal);
+			priceChange();
 		}
 
 		System::Void right_panel_Paint(System::Object ^ sender, System::Windows::Forms::PaintEventArgs ^ e)
 		{
 		}
-		System::Void jumlah_barang_ValueChanged(System::Object ^ sender, System::EventArgs ^ e)
-		{
-			String ^ ongkosCleaned = ongkos_kirim->Text->Replace("Rp.", "")->Replace(".", "");
-			String ^ jumlahCleaned = jumlah_barang->Text->Replace("Rp.", "")->Replace(".", "");
-			String ^ hargaCleaned = harga_1_barang->Text->Replace("Rp.", "")->Replace(".", "");
-
-			int ongkosKirim = System::Convert::ToInt64(ongkosCleaned);
-			int jumlahBarang = System::Convert::ToInt64(jumlahCleaned);
-			int harga = System::Convert::ToInt64(hargaCleaned);
-
-			int subtotal = ongkosKirim + (jumlahBarang * harga) + 5000;
-
-			Total_tagihan->Text = String::Format("Rp.{0:N0}", subtotal);
-		}
 
 	private:
 		System::Void CheckOut_Load(System::Object ^ sender, System::EventArgs ^ e)
 		{
-
-			String ^ ongkosCleaned = ongkos_kirim->Text->Replace("Rp.", "")->Replace(".", "");
-			String ^ jumlahCleaned = jumlah_barang->Text->Replace("Rp.", "")->Replace(".", "");
-			String ^ hargaCleaned = harga_1_barang->Text->Replace("Rp.", "")->Replace(".", "");
-
-			int ongkosKirim = System::Convert::ToInt64(ongkosCleaned);
-			int jumlahBarang = System::Convert::ToInt64(jumlahCleaned);
-			int harga = System::Convert::ToInt64(hargaCleaned);
-
-			int subtotal = ongkosKirim + (jumlahBarang * harga) + 5000;
-
-			Total_tagihan->Text = String::Format("Rp.{0:N0}", subtotal);
+			priceChange();
 		}
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 
-
-		FormBayar^ BayarForm = gcnew FormBayar();
-		// valueToSend->Tag = valueToSend;
-		BayarForm->ShowDialog();
-		this->Close();
-	}
-};
+	private:
+		System::Void button2_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			String^ finalBayar = Total_tagihan->Text;
+			FormBayar ^ BayarForm = gcnew FormBayar(finalBayar);
+			// valueToSend->Tag = valueToSend;
+			BayarForm->ShowDialog();
+			this->Close();
+		}
+	};
 }

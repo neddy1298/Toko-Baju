@@ -22,6 +22,9 @@ namespace TokoOnline {
 			//TODO: Add the constructor code here
 			//
 		}
+		FormBayar(String^ data) {
+			final_harga->Text = data;
+		}
 
 	protected:
 		/// <summary>
@@ -38,7 +41,8 @@ namespace TokoOnline {
 	protected:
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ final_harga;
+
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Button^ button1;
@@ -64,7 +68,7 @@ namespace TokoOnline {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->final_harga = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
@@ -105,16 +109,16 @@ namespace TokoOnline {
 			this->label5->TabIndex = 4;
 			this->label5->Text = L"AJ081239821";
 			// 
-			// label6
+			// final_harga
 			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->final_harga->AutoSize = true;
+			this->final_harga->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(30, 368);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(99, 27);
-			this->label6->TabIndex = 5;
-			this->label6->Text = L"Rp.80.000";
+			this->final_harga->Location = System::Drawing::Point(30, 368);
+			this->final_harga->Name = L"final_harga";
+			this->final_harga->Size = System::Drawing::Size(99, 27);
+			this->final_harga->TabIndex = 5;
+			this->final_harga->Text = L"Rp.80.000";
 			// 
 			// label7
 			// 
@@ -175,7 +179,7 @@ namespace TokoOnline {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
-			this->Controls->Add(this->label6);
+			this->Controls->Add(this->final_harga);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
