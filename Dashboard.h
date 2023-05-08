@@ -20,6 +20,11 @@ public
 	{
 	public:
 		Form ^ loginForm;
+
+	private:
+		System::Windows::Forms::ContextMenuStrip ^ contextMenuStrip1;
+
+	public:
 		String ^ barang;
 		Dashboard(void)
 		{
@@ -101,9 +106,11 @@ public
 		System::Windows::Forms::Label ^ nama_barang_4;
 		System::Windows::Forms::Panel ^ gambar_4;
 
+	private:
+		System::ComponentModel::IContainer ^ components;
+
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -112,6 +119,7 @@ public
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->components = (gcnew System::ComponentModel::Container());
 			System::ComponentModel::ComponentResourceManager ^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Dashboard::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->panel8 = (gcnew System::Windows::Forms::Panel());
@@ -160,6 +168,7 @@ public
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->panel14 = (gcnew System::Windows::Forms::Panel());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
 			this->panel8->SuspendLayout();
 			this->panel13->SuspendLayout();
 			this->panel15->SuspendLayout();
@@ -521,6 +530,7 @@ public
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(296, 312);
 			this->panel1->TabIndex = 10;
+			this->panel1->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_5_click);
 			//
 			// label2
 			//
@@ -532,6 +542,7 @@ public
 			this->label2->Size = System::Drawing::Size(107, 27);
 			this->label2->TabIndex = 5;
 			this->label2->Text = L"RP.47.000";
+			this->label2->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_5_click);
 			//
 			// label3
 			//
@@ -543,6 +554,7 @@ public
 			this->label3->TabIndex = 4;
 			this->label3->Text = L"Baju Kaos Pria Lengan Pendek Atasan Cowok Tshirt Taurus Fashion Distro - Abu-abu,"
 								 L" XS";
+			this->label3->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_5_click);
 			//
 			// panel2
 			//
@@ -552,6 +564,7 @@ public
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(204, 213);
 			this->panel2->TabIndex = 3;
+			this->panel2->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_5_click);
 			//
 			// panel3
 			//
@@ -564,6 +577,7 @@ public
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(296, 312);
 			this->panel3->TabIndex = 11;
+			this->panel3->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_6_click);
 			//
 			// label4
 			//
@@ -575,6 +589,7 @@ public
 			this->label4->Size = System::Drawing::Size(107, 27);
 			this->label4->TabIndex = 5;
 			this->label4->Text = L"RP.44.900";
+			this->label4->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_6_click);
 			//
 			// label7
 			//
@@ -585,6 +600,7 @@ public
 			this->label7->Size = System::Drawing::Size(204, 48);
 			this->label7->TabIndex = 4;
 			this->label7->Text = L"Baju Kaos Pria Distro Lengan Pendek Kayser Turns Motif Sablon Premium - Biru, M";
+			this->label7->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_6_click);
 			//
 			// panel4
 			//
@@ -594,6 +610,7 @@ public
 			this->panel4->Name = L"panel4";
 			this->panel4->Size = System::Drawing::Size(204, 213);
 			this->panel4->TabIndex = 3;
+			this->panel4->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_6_click);
 			//
 			// panel5
 			//
@@ -606,6 +623,7 @@ public
 			this->panel5->Name = L"panel5";
 			this->panel5->Size = System::Drawing::Size(296, 312);
 			this->panel5->TabIndex = 12;
+			this->panel5->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_7_click);
 			//
 			// label8
 			//
@@ -617,6 +635,7 @@ public
 			this->label8->Size = System::Drawing::Size(107, 27);
 			this->label8->TabIndex = 5;
 			this->label8->Text = L"RP.24.000";
+			this->label8->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_7_click);
 			//
 			// label9
 			//
@@ -627,6 +646,7 @@ public
 			this->label9->Size = System::Drawing::Size(204, 48);
 			this->label9->TabIndex = 4;
 			this->label9->Text = L"N10 Kaos pria distro murah | Size M L XL XXL XXXL/Baju oblong / CEWEK - Putih, M";
+			this->label9->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_7_click);
 			//
 			// panel6
 			//
@@ -636,6 +656,7 @@ public
 			this->panel6->Name = L"panel6";
 			this->panel6->Size = System::Drawing::Size(204, 213);
 			this->panel6->TabIndex = 3;
+			this->panel6->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_7_click);
 			//
 			// panel7
 			//
@@ -648,6 +669,7 @@ public
 			this->panel7->Name = L"panel7";
 			this->panel7->Size = System::Drawing::Size(296, 312);
 			this->panel7->TabIndex = 12;
+			this->panel7->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_8_click);
 			//
 			// label10
 			//
@@ -659,6 +681,7 @@ public
 			this->label10->Size = System::Drawing::Size(107, 27);
 			this->label10->TabIndex = 5;
 			this->label10->Text = L"RP.29.900";
+			this->label10->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_8_click);
 			//
 			// label11
 			//
@@ -669,6 +692,7 @@ public
 			this->label11->Size = System::Drawing::Size(204, 48);
 			this->label11->TabIndex = 4;
 			this->label11->Text = L"kaos murah baju pria t shirt distro astronot bulan - L";
+			this->label11->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_8_click);
 			//
 			// panel11
 			//
@@ -678,6 +702,7 @@ public
 			this->panel11->Name = L"panel11";
 			this->panel11->Size = System::Drawing::Size(204, 213);
 			this->panel11->TabIndex = 3;
+			this->panel11->Click += gcnew System::EventHandler(this, &Dashboard::produk_card_8_click);
 			//
 			// label6
 			//
@@ -714,6 +739,12 @@ public
 			this->comboBox1->Size = System::Drawing::Size(263, 30);
 			this->comboBox1->TabIndex = 1;
 			this->comboBox1->Text = L"Urutkan:";
+			//
+			// contextMenuStrip1
+			//
+			this->contextMenuStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
+			this->contextMenuStrip1->Name = L"contextMenuStrip1";
+			this->contextMenuStrip1->Size = System::Drawing::Size(61, 4);
 			//
 			// Dashboard
 			//
@@ -756,7 +787,16 @@ public
 			this->ResumeLayout(false);
 		}
 
-	private:
+	protected:
+		void details(String ^ barang)
+		{
+
+			// this->Hide();
+			DetailProduk ^ detailForm = gcnew DetailProduk(barang);
+			// valueToSend->Tag = valueToSend;
+			detailForm->ShowDialog();
+		}
+
 		System::Void panel12_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
 			this->Hide();
@@ -785,46 +825,39 @@ public
 
 		System::Void produk_card_1_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
-
-			String ^ barang = "1";
-
-			// this->Hide();
-			DetailProduk ^ detailForm = gcnew DetailProduk(barang);
-			// valueToSend->Tag = valueToSend;
-			detailForm->ShowDialog();
+			details("1");
 		}
 		System::Void produk_card_2_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
 
-			String ^ barang = "2";
-
-			// this->Hide();
-			DetailProduk ^ detailForm = gcnew DetailProduk(barang);
-			// valueToSend->Tag = valueToSend;
-			detailForm->ShowDialog();
+			details("2");
 		}
 		System::Void produk_card_3_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
 
-			String ^ barang = "3";
-
-			// this->Hide();
-			DetailProduk ^ detailForm = gcnew DetailProduk(barang);
-			// valueToSend->Tag = valueToSend;
-			detailForm->ShowDialog();
+			details("3");
 		}
 		System::Void produk_card_4_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
-
-			String ^ barang = "4";
-
-			// this->Hide();
-			DetailProduk ^ detailForm = gcnew DetailProduk(barang);
-			// valueToSend->Tag = valueToSend;
-			detailForm->ShowDialog();
+			details("4");
+		}
+		System::Void produk_card_5_click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			details("5");
 		}
 
-	private:
+		System::Void produk_card_6_click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			details("6");
+		}
+		System::Void produk_card_7_click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			details("7");
+		}
+		System::Void produk_card_8_click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			details("8");
+		}
 		System::Void keranjang_form(System::Object ^ sender, System::EventArgs ^ e)
 		{
 
