@@ -395,7 +395,7 @@ public
 	private:
 		System::Void login_click(System::Object ^ sender, System::EventArgs ^ e)
 		{
-			if (email->Text == "admin" && password->Text == "admin")
+			if (email->Text == "Email" && password->Text == "Password")
 			{
 				this->Hide();
 				Dashboard ^ dashboardForm = gcnew Dashboard(this);
