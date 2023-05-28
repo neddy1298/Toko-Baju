@@ -3,7 +3,6 @@
 
 namespace TokoOnline
 {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -14,11 +13,11 @@ namespace TokoOnline
 	/// <summary>
 	/// Summary for RegisterForm
 	/// </summary>
-public
+	public
 	ref class RegisterForm : public System::Windows::Forms::Form
 	{
 	public:
-		Form ^ loginForm;
+		Form^ loginForm;
 		RegisterForm(void)
 		{
 			InitializeComponent();
@@ -26,7 +25,7 @@ public
 			// TODO: Add the constructor code here
 			//
 		}
-		RegisterForm(Form ^ registerForm)
+		RegisterForm(Form^ registerForm)
 		{
 			loginForm = registerForm;
 			InitializeComponent();
@@ -48,69 +47,69 @@ public
 		}
 
 	private:
-		System::Windows::Forms::Label ^ label1;
+		System::Windows::Forms::Label^ label1;
 
 	protected:
 	private:
-		System::Windows::Forms::TextBox ^ email;
+		System::Windows::Forms::TextBox^ email;
 
 	private:
-		System::Windows::Forms::Button ^ daftar;
+		System::Windows::Forms::Button^ daftar;
 
 	private:
 	private:
-		System::Windows::Forms::Panel ^ panel1;
+		System::Windows::Forms::Panel^ panel1;
 
 	private:
-		System::Windows::Forms::Panel ^ panel10;
+		System::Windows::Forms::Panel^ panel10;
 
 	private:
-		System::Windows::Forms::Panel ^ panel7;
+		System::Windows::Forms::Panel^ panel7;
 
 	private:
-		System::Windows::Forms::Panel ^ panel2;
+		System::Windows::Forms::Panel^ panel2;
 
 	private:
-		System::Windows::Forms::Label ^ label3;
+		System::Windows::Forms::Label^ label3;
 
 	private:
-		System::Windows::Forms::Label ^ label2;
+		System::Windows::Forms::Label^ label2;
 
 	private:
-		System::Windows::Forms::Panel ^ panel3;
+		System::Windows::Forms::Panel^ panel3;
 
 	private:
-		System::Windows::Forms::Panel ^ panel8;
+		System::Windows::Forms::Panel^ panel8;
 
 	private:
-		System::Windows::Forms::TextBox ^ password;
+		System::Windows::Forms::TextBox^ password;
 
 	private:
-		System::Windows::Forms::Panel ^ panel6;
+		System::Windows::Forms::Panel^ panel6;
 
 	private:
-		System::Windows::Forms::Panel ^ panel9;
+		System::Windows::Forms::Panel^ panel9;
 
 	private:
-		System::Windows::Forms::Panel ^ panel11;
+		System::Windows::Forms::Panel^ panel11;
 
 	private:
-		System::Windows::Forms::TextBox ^ name;
+		System::Windows::Forms::TextBox^ name;
 
 	private:
-		System::Windows::Forms::Panel ^ panel12;
+		System::Windows::Forms::Panel^ panel12;
 
 	private:
-		System::Windows::Forms::Panel ^ panel4;
+		System::Windows::Forms::Panel^ panel4;
 
 	private:
-		System::Windows::Forms::Panel ^ panel5;
+		System::Windows::Forms::Panel^ panel5;
 
 	private:
-		System::Windows::Forms::Label ^ label4;
+		System::Windows::Forms::Label^ label4;
 
 	private:
-		System::Windows::Forms::CheckBox ^ checkBox1;
+		System::Windows::Forms::CheckBox^ checkBox1;
 
 	protected:
 	protected:
@@ -119,7 +118,7 @@ public
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^ components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -128,7 +127,7 @@ public
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager ^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RegisterForm::typeid));
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RegisterForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->email = (gcnew System::Windows::Forms::TextBox());
 			this->daftar = (gcnew System::Windows::Forms::Button());
@@ -161,7 +160,7 @@ public
 			//
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label1->Location = System::Drawing::Point(26, 50);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(102, 37);
@@ -174,7 +173,7 @@ public
 			this->email->BackColor = System::Drawing::Color::White;
 			this->email->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->email->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->email->ForeColor = System::Drawing::Color::Black;
 			this->email->Location = System::Drawing::Point(70, 13);
 			this->email->Name = L"email";
@@ -186,10 +185,10 @@ public
 			// daftar
 			//
 			this->daftar->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(32)), static_cast<System::Int32>(static_cast<System::Byte>(45)),
-																	   static_cast<System::Int32>(static_cast<System::Byte>(77)));
+				static_cast<System::Int32>(static_cast<System::Byte>(77)));
 			this->daftar->FlatAppearance->BorderSize = 0;
 			this->daftar->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->daftar->ForeColor = System::Drawing::Color::White;
 			this->daftar->Location = System::Drawing::Point(33, 414);
 			this->daftar->Name = L"daftar";
@@ -221,7 +220,7 @@ public
 			// panel7
 			//
 			this->panel7->BackColor = System::Drawing::Color::Transparent;
-			this->panel7->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel7.BackgroundImage")));
+			this->panel7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel7.BackgroundImage")));
 			this->panel7->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel7->Location = System::Drawing::Point(10, 9);
 			this->panel7->Name = L"panel7";
@@ -265,7 +264,7 @@ public
 			this->label3->AutoSize = true;
 			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::CornflowerBlue;
 			this->label3->Location = System::Drawing::Point(403, 480);
 			this->label3->Name = L"label3";
@@ -278,7 +277,7 @@ public
 			//
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label2->Location = System::Drawing::Point(179, 479);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(143, 19);
@@ -309,7 +308,7 @@ public
 			this->password->BackColor = System::Drawing::Color::White;
 			this->password->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->password->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->password->ForeColor = System::Drawing::Color::Black;
 			this->password->Location = System::Drawing::Point(70, 17);
 			this->password->Name = L"password";
@@ -322,7 +321,7 @@ public
 			// panel6
 			//
 			this->panel6->BackColor = System::Drawing::Color::Transparent;
-			this->panel6->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel6.BackgroundImage")));
+			this->panel6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel6.BackgroundImage")));
 			this->panel6->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel6->Location = System::Drawing::Point(10, 9);
 			this->panel6->Name = L"panel6";
@@ -332,7 +331,7 @@ public
 			// label4
 			//
 			this->label4->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label4->Location = System::Drawing::Point(29, 96);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(434, 51);
@@ -364,7 +363,7 @@ public
 			this->name->BackColor = System::Drawing::Color::White;
 			this->name->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->name->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->name->ForeColor = System::Drawing::Color::Black;
 			this->name->Location = System::Drawing::Point(70, 13);
 			this->name->Name = L"name";
@@ -376,7 +375,7 @@ public
 			// panel12
 			//
 			this->panel12->BackColor = System::Drawing::Color::Transparent;
-			this->panel12->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel12.BackgroundImage")));
+			this->panel12->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel12.BackgroundImage")));
 			this->panel12->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel12->Location = System::Drawing::Point(10, 9);
 			this->panel12->Name = L"panel12";
@@ -386,7 +385,7 @@ public
 			// panel4
 			//
 			this->panel4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(44)), static_cast<System::Int32>(static_cast<System::Byte>(46)),
-																	   static_cast<System::Int32>(static_cast<System::Byte>(54)));
+				static_cast<System::Int32>(static_cast<System::Byte>(54)));
 			this->panel4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->panel4->Controls->Add(this->panel5);
 			this->panel4->Dock = System::Windows::Forms::DockStyle::Fill;
@@ -399,7 +398,7 @@ public
 			// panel5
 			//
 			this->panel5->BackColor = System::Drawing::Color::Transparent;
-			this->panel5->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"panel5.BackgroundImage")));
+			this->panel5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel5.BackgroundImage")));
 			this->panel5->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->panel5->Location = System::Drawing::Point(12, 54);
 			this->panel5->Name = L"panel5";
@@ -432,27 +431,26 @@ public
 		}
 
 	private:
-		System::Void daftar_Click(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void daftar_Click(System::Object^ sender, System::EventArgs^ e)
 		{
-
 			if (name->Text != "" && email->Text != "" && password->Text != "")
 			{
 				this->Hide();
-				Dashboard ^ dashboardForm = gcnew Dashboard(this);
+				Dashboard^ dashboardForm = gcnew Dashboard(this);
 				dashboardForm->ShowDialog();
 				// this->Close();
 			}
 		}
 
 	private:
-		System::Void label3_Click(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->Hide();
 			loginForm->Show();
 		}
 
 	private:
-		System::Void name_Click(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void name_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			if (name->Text == "Nama")
 			{
@@ -472,7 +470,7 @@ public
 		}
 
 	private:
-		System::Void email_Click(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void email_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			if (email->Text == "Email")
 			{
@@ -492,7 +490,7 @@ public
 		}
 
 	private:
-		System::Void password_Click(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void password_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			if (password->Text == "Password")
 			{
@@ -512,7 +510,7 @@ public
 		}
 
 	private:
-		System::Void other_Click(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void other_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			if (name->Text == "")
 			{
@@ -529,7 +527,7 @@ public
 		}
 
 	private:
-		System::Void checkBox1_CheckedChanged(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 		{
 			if (checkBox1->Checked)
 			{

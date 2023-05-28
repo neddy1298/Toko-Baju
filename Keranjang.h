@@ -2,7 +2,6 @@
 
 namespace TokoOnline
 {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -15,7 +14,7 @@ namespace TokoOnline
 	/// <summary>
 	/// Summary for Keranjang
 	/// </summary>
-public
+	public
 	ref class Keranjang : public System::Windows::Forms::Form
 	{
 	public:
@@ -44,21 +43,21 @@ public
 		}
 
 	private:
-		System::Windows::Forms::Panel ^ left_panel;
-		System::Windows::Forms::Panel ^ card_1;
-		System::Windows::Forms::Label ^ nama_barang;
-		System::Windows::Forms::CheckBox ^ checkBox1;
-		System::Windows::Forms::Panel ^ image;
-		System::Windows::Forms::Label ^ label1;
-		System::Windows::Forms::Panel ^ right_panel;
-		System::Windows::Forms::Label ^ produk_harga_1;
-		System::Windows::Forms::Label ^ harga_barang;
-		System::Windows::Forms::Panel ^ hapus;
-		System::Windows::Forms::NumericUpDown ^ stok;
+		System::Windows::Forms::Panel^ left_panel;
+		System::Windows::Forms::Panel^ card_1;
+		System::Windows::Forms::Label^ nama_barang;
+		System::Windows::Forms::CheckBox^ checkBox1;
+		System::Windows::Forms::Panel^ image;
+		System::Windows::Forms::Label^ label1;
+		System::Windows::Forms::Panel^ right_panel;
+		System::Windows::Forms::Label^ produk_harga_1;
+		System::Windows::Forms::Label^ harga_barang;
+		System::Windows::Forms::Panel^ hapus;
+		System::Windows::Forms::NumericUpDown^ stok;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^ components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -67,7 +66,7 @@ public
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager ^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Keranjang::typeid));
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Keranjang::typeid));
 			this->left_panel = (gcnew System::Windows::Forms::Panel());
 			this->card_1 = (gcnew System::Windows::Forms::Panel());
 			this->hapus = (gcnew System::Windows::Forms::Panel());
@@ -81,7 +80,7 @@ public
 			this->right_panel = (gcnew System::Windows::Forms::Panel());
 			this->left_panel->SuspendLayout();
 			this->card_1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize ^>(this->stok))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->stok))->BeginInit();
 			this->SuspendLayout();
 			//
 			// left_panel
@@ -110,7 +109,7 @@ public
 			//
 			// hapus
 			//
-			this->hapus->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"hapus.BackgroundImage")));
+			this->hapus->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"hapus.BackgroundImage")));
 			this->hapus->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->hapus->Location = System::Drawing::Point(562, 87);
 			this->hapus->Name = L"hapus";
@@ -122,7 +121,7 @@ public
 			//
 			this->stok->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->stok->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->stok->Location = System::Drawing::Point(616, 87);
 			this->stok->Name = L"stok";
 			this->stok->Size = System::Drawing::Size(142, 30);
@@ -133,7 +132,7 @@ public
 			//
 			this->produk_harga_1->AutoSize = true;
 			this->produk_harga_1->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																	  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->produk_harga_1->Location = System::Drawing::Point(159, 80);
 			this->produk_harga_1->Name = L"produk_harga_1";
 			this->produk_harga_1->Size = System::Drawing::Size(42, 27);
@@ -144,7 +143,7 @@ public
 			//
 			this->harga_barang->AutoSize = true;
 			this->harga_barang->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->harga_barang->Location = System::Drawing::Point(203, 80);
 			this->harga_barang->Name = L"harga_barang";
 			this->harga_barang->Size = System::Drawing::Size(77, 27);
@@ -154,7 +153,7 @@ public
 			// nama_barang
 			//
 			this->nama_barang->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display", 16.2F, System::Drawing::FontStyle::Regular,
-																   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->nama_barang->Location = System::Drawing::Point(157, 19);
 			this->nama_barang->Name = L"nama_barang";
 			this->nama_barang->Size = System::Drawing::Size(601, 58);
@@ -181,7 +180,7 @@ public
 			//
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI Variable Display Semib", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label1->Location = System::Drawing::Point(47, 65);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(126, 37);
@@ -211,17 +210,17 @@ public
 			this->left_panel->PerformLayout();
 			this->card_1->ResumeLayout(false);
 			this->card_1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize ^>(this->stok))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->stok))->EndInit();
 			this->ResumeLayout(false);
 		}
 #pragma endregion
 	private:
-		System::Void panel5_Paint(System::Object ^ sender, System::Windows::Forms::PaintEventArgs ^ e)
+		System::Void panel5_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e)
 		{
 		}
 
 	private:
-		System::Void Keranjang_Load(System::Object ^ sender, System::EventArgs ^ e)
+		System::Void Keranjang_Load(System::Object^ sender, System::EventArgs^ e)
 		{
 		}
 	};

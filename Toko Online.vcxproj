@@ -25,6 +25,7 @@
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>TokoOnline</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Toko Baju</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -125,7 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CheckOut.cpp" />
-    <ClCompile Include="contoh1.cpp" />
     <ClCompile Include="Dashboard.cpp" />
     <ClCompile Include="DetailProduk.cpp" />
     <ClCompile Include="FormBayar.cpp" />
@@ -135,9 +135,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckOut.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="contoh1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Dashboard.h">
@@ -162,9 +159,6 @@
   <ItemGroup>
     <EmbeddedResource Include="CheckOut.resx">
       <DependentUpon>CheckOut.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="contoh1.resx">
-      <DependentUpon>contoh1.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.h</DependentUpon>

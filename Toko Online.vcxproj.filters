@@ -33,9 +33,6 @@
     <ClCompile Include="CheckOut.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="contoh1.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="FormBayar.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
@@ -57,9 +54,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CheckOut.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="contoh1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FormBayar.h">
