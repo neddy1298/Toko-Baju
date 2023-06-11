@@ -27,14 +27,14 @@
     <ClCompile Include="DetailProduk.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="Keranjang.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="CheckOut.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="FormBayar.cpp">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CekPembayaran.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -50,13 +50,13 @@
     <ClInclude Include="DetailProduk.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Keranjang.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CheckOut.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FormBayar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CekPembayaran.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

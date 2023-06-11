@@ -125,15 +125,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CekPembayaran.cpp" />
     <ClCompile Include="CheckOut.cpp" />
     <ClCompile Include="Dashboard.cpp" />
     <ClCompile Include="DetailProduk.cpp" />
     <ClCompile Include="FormBayar.cpp" />
-    <ClCompile Include="Keranjang.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="RegisterForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CekPembayaran.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="CheckOut.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -146,9 +149,6 @@
     <ClInclude Include="FormBayar.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Keranjang.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="LoginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -157,6 +157,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CekPembayaran.resx">
+      <DependentUpon>CekPembayaran.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CheckOut.resx">
       <DependentUpon>CheckOut.h</DependentUpon>
     </EmbeddedResource>
@@ -168,9 +171,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBayar.resx">
       <DependentUpon>FormBayar.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Keranjang.resx">
-      <DependentUpon>Keranjang.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>
